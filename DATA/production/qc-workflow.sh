@@ -17,6 +17,7 @@ if [[ -z $QC_JSON_FROM_OUTSIDE ]]; then
     [[ -z "$QC_JSON_EMC" ]] && QC_JSON_EMC=/home/mfasel/alice/O2DataProcessing/testing/detectors/EMC/qc/emcQCTasksAll_multinode.json
     [[ -z "$QC_JSON_MCH" ]] && QC_JSON_MCH=/home/laphecet/qc_configs/mch-qc-physics.json
     [[ -z "$QC_JSON_MID" ]] && QC_JSON_MID=/home/dstocco/config/mid-qcmn-epn-digits.json
+    [[ -z "$QC_JSON_TRD" ]] && QC_JSON_TRD=/home/murrays/QC/trd-prod-qc.json
     [[ -z "$QC_JSON_PRIMVTX" ]] && QC_JSON_PRIMVTX=/home/shahoian/jsons/vertexing-qc.json
     [[ -z "$QC_JSON_GLOBAL" ]] && QC_JSON_GLOBAL=$O2DPG_ROOT/DATA/production/qc-sync/qc-global.json
   elif [[ $SYNCMODE == 1 ]]; then
@@ -30,6 +31,7 @@ if [[ -z $QC_JSON_FROM_OUTSIDE ]]; then
     [[ -z "$QC_JSON_EMC" ]] && QC_JSON_EMC=$O2DPG_ROOT/DATA/production/qc-sync/emc.json
     [[ -z "$QC_JSON_MCH" ]] && QC_JSON_MCH=$O2DPG_ROOT/DATA/production/qc-sync/mch.json
     [[ -z "$QC_JSON_MID" ]] && QC_JSON_MID=$O2DPG_ROOT/DATA/production/qc-sync/mid.json
+    [[ -z "$QC_JSON_TRD" ]] && QC_JSON_TRD=$O2DPG_ROOT/DATA/production/qc-sync/trd.json
     [[ -z "$QC_JSON_PRIMVTX" ]] && QC_JSON_PRIMVTX=$O2DPG_ROOT/DATA/production/qc-sync/pvtx.json
     [[ -z "$QC_JSON_GLOBAL" ]] && QC_JSON_GLOBAL=$O2DPG_ROOT/DATA/production/qc-sync/qc-global.json
   else
